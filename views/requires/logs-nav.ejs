@@ -1,0 +1,40 @@
+<div class="logs-nav">
+
+  <div class="logs-nav-bar">
+    <a class = "nav-bar-link-brand" href="/">
+      <h1 class = "nav-bar-brand"><span>Chit</span>Chat</h1>
+    </a>
+
+    <div class="nav-options logs-nav-options">
+
+      <a class = "nav-option log-search">
+        <img class="log-nav-option-img" src="content/images/icon_search.png" alt="">
+      </a>
+
+      <div style="display:inline" class="dropdown">
+        <a class = "nav-option dropbtn" onclick="toggleDrop()">
+          <img class="log-nav-option-img" src="content/images/icon_options.png" alt="">
+        </a>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="/profile">User profile</a>
+          <a class="logout">Log out</a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="logs-main">
+    <a class="log-option log-option-messages log-option-selected">messages</a>
+    <!--<a class="log-option log-option-groups">Groups</a>-->
+  </div>
+
+</div>
+
+<script>
+
+  function toggleDrop() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+</script>

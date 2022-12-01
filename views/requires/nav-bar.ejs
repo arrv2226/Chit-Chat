@@ -1,0 +1,44 @@
+<!-- nav -->
+<div class="nav-bar">
+
+<div style="display:flex; justify-content:center; align-content:center">
+
+    <% if(optionsAvailable != 0){ %>
+      <a class = "nav-option nav-option-back" style="margin-left: .5rem;">
+          <img style="margin-top:.5rem" src="content/images/icon_back.png" alt="">
+      </a>
+
+      <img class="friend-DP" style="border-radius:50%; background-color:white; height:2.75rem; width:2.75rem " src="  ">
+      <p class="friend-Name" style="margin-left:.5rem;margin-top:.5rem;color:#787A91;font-weight:bold"> friend Name </p>
+
+    <%}%>
+
+    <% if(optionsAvailable == 0){ %>
+    <a class = "nav-bar-link-brand" href="/">
+      <h1 class = "nav-bar-brand"><span>Chit</span>Chat</h1>
+    </a>
+    <%}%>
+
+</div>
+
+<% if(optionsAvailable != 0){ %>
+
+  <div class="nav-options">
+    <a class = "nav-option nav-option-call">
+      <img src="content/images/icon_vc.png" alt="">
+    </a>
+
+    <a class = "nav-option nav-option-videocall">
+      <img src="content/images/icon_call.png" alt="">
+    </a>
+
+    <a class = "nav-option nav-option-options">
+      <img src="content/images/icon_options.png" alt="">
+    </a>
+
+  </div>
+
+<%}%>
+
+</div>
+<!-- nav -->
